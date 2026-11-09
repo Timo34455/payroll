@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Details</title>
+</head>
+<body>
+  <h1>Payroll Details</h1>
+
+  <form action="calculat0r.php" method="post">
+    <div>
+      <label for="employee-name">Employee name:</label>
+      <input type="text" id="employee-name" name="employee_name" required>
+    </div>
+
+    <div>
+      <label for="basic-salary">Basic salary (KES):</label>
+      <input type="number" id="basic-salary" name="basic_salary" min="0" step="0.01" required>
+    </div>
+
+    <div>
+      <label for="house-allowance">House allowance (KES):</label>
+      <input type="number" id="house-allowance" name="house_allowance" min="0" step="0.01" required>
+    </div>
+
+    <fieldset>
+      <legend>Is union member?</legend>
+      <label for="union-yes">
+        <input type="radio" id="union-yes" name="union_member" value="yes" required>
+        Yes
+      </label>
+      <label for="union-no">
+        <input type="radio" id="union-no" name="union_member" value="no">
+        No
+      </label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
